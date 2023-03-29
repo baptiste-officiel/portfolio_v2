@@ -1,0 +1,58 @@
+[
+    {
+        "titre": "Portfolio",
+        "image" : "../assets/img/screen_portfolio.PNG",
+        "langages" : ["HTML", "SCSS/SASS", "JavaScript", "Vite.js", "JSON", "Emailjs", "Chart.js"],
+        "description" : "Tout d'abord mon Portfolio réalisé par mes soins. J'ai initialisé le projet grâce à <strong>Vite.js</strong> puis développé la partie Front-End en <strong>HTML</strong>, <strong>SCSS</strong>. J'ai utilisé du <strong>JavaScript</strong> et <strong>JSON</strong> afin d'afficher la liste de mes projets ainsi que <strong>Chart.js</strong> pour le graphique de mes compétences. Ensuite je me suis servi d'<strong>Emailjs</strong> afin d'envoyer le formulaire de contact par mail.",
+        "site" : "/",
+        "github" : "https://github.com/baptiste-officiel/LADP"
+    },
+    {
+        "titre": "LADP",
+        "image" : "../assets/img/screen_ladp.PNG",
+        "langages" : ["HTML", "CSS", "SCSS/SASS", "JavaScript", "PHP", "MySQL"],
+        "description" : "Site Web <strong>from Scratch</strong> pour une société de location d'ULM. Premier projet réalisé pour un client. J'ai développé la partie Front-End en <strong>HTML</strong>, <strong>SCSS</strong>, j'ai pu ajouté du <strong>JavaScript</strong> pour gérer quelques animations. Pour la partie Back-End, j'ai utilisé <strong>PHP</strong> ainsi que <strong>MySQL</strong> pour créer et enregistrer les données du formulaire de contact en base de données. J'ai également découvert la fonction <strong>mail()</strong> de <strong>PHP</strong> que j'ai utilisé pour envoyer le formulaire par email au propriétaire du site",
+        "site" : "http://baptiste-officiel.alwaysdata.net/",
+        "github" : "https://github.com/baptiste-officiel/LADP"
+    },
+    {
+        "titre": "Ultra Shape",
+        "image" : "../assets/img/screen_ultrashape.PNG",
+        "langages" : ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+        "description" : "Site Web <strong>from Scratch</strong>. Il s'agit de mon projet de fin de formation. Le but était ici d'utiliser les 5 langages appris au cours de cette formation et de réaliser un site responsive, dynamique, avec une partie <strong>Front-End</strong> et <strong>Back-End</strong> et une partie Admin ayant accès à la base de données.",
+        "site" : "http://ultra-shape.alwaysdata.net/",
+        "github" : "https://github.com/baptiste-officiel/UltraShape"
+    },
+    {
+        "titre": "Pokedex",
+        "image" : "../assets/img/screen_pokedex.PNG",
+        "langages" : ["HTML", "SCSS/SASS", "JavaScript", "API"],
+        "description" : "Projet <strong>from Scratch</strong>. Il s'agit ici d'une récupération et réutilisation de données provenant d'une <strong>API</strong>, l'API Pokemon. Le but étant de créer un Pokedex répertoriant les Pokemon et d'afficher leur nom, photo et quelques données.",
+        "site" : "https://baptiste-officiel.github.io/Pokedex/",
+        "github" : "https://github.com/baptiste-officiel/Pokedex"
+    },
+    {
+        "titre": "App Météo",
+        "image" : "../assets/img/screen_meteo.PNG",
+        "langages" : ["HTML", "SCSS/SASS", "JavaScript", "API"],
+        "description" : "Projet <strong>from Scratch</strong>. On récupère les données provenant de l'<strong>API</strong> \"OpenMeteo\" et on les utilise afin de créer une app météo. Cela m'a permis de faire des appels à une <strong>API</strong> et de manipuler le <strong>DOM</strong>.",
+        "site" : "https://baptiste-officiel.github.io/appMeteo/",
+        "github" : "https://github.com/baptiste-officiel/appMeteo"
+    },
+    {
+        "titre": "Recherche Dynamique",
+        "image" : "../assets/img/screen_recherche_dynamique.PNG",
+        "langages" : ["HTML", "SCSS/SASS", "JavaScript", "TypeScript", "API"],
+        "description" : "Projet <strong>from Scratch</strong>. Dans ce projet, on récupère des données provenant d'une <strong>API</strong>, l'API \"RandomUsers\", et on crée un tableau contenant les utilisateurs. On ajoute ensuite une barre de recherche qui filtre les utilisateurs au fur et à mesure de la recherche. Dans ce projet j'ai pu faire des appels à une <strong>API</strong> et découvrir <strong>TypeScript</strong>.",
+        "site" : "https://baptiste-officiel.github.io/recherche_dynamique/",
+        "github" : "https://github.com/baptiste-officiel/recherche_dynamique"
+    },
+    {
+        "titre": "Sphère 3D",
+        "image" : "../assets/img/screen_sphere.PNG",
+        "langages" : ["HTML", "CSS", "JavaScript", "Three.js"],
+        "description" : "Projet <strong>from Scratch</strong>. Découverte, première manipulation de <strong>Three.js</strong> afin de manipuler des <strong>objets 3D</strong>. On peut ici apercevoir une sphère en rotation et la faire tourner manuellement.",
+        "site" : "https://sphere-threejs.alwaysdata.net/",
+        "github" : "https://github.com/baptiste-officiel/ThreeJS/tree/main/three-js-project-1"
+    }
+]
