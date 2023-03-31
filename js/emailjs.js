@@ -5,7 +5,8 @@ window.onload = function() {
         // this.contact_number.value = Math.random() * 100000 | 0;
         // these IDs from the previous steps
         emailjs.sendForm('service_2asm0hd', 'contact_form_portfolio', this)
-            .then(function() {
+        .then(function() {
+                document.getElementById('contact-form').reset();
                 console.log('SUCCESS!');
                 alert('Votre message a bien été envoyé !')
             }, function(error) {

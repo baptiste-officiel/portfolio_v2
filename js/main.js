@@ -1,6 +1,21 @@
-import '../style/style.scss';
+// import '../style/style.scss';
 import { Chart } from 'chart.js/auto';
 // import emailjs_key from './emailjs_key';
+import gsap from 'gsap';
+
+
+// ------------------------------------- animations gsap ---------------------------- 
+let timeline = gsap.timeline();
+
+const nav = document.querySelector('.nav');
+const title = document.querySelector('.intro h1');
+const intro = document.querySelector('.intro .txt-intro');
+const projets = document.querySelector('.projets');
+
+timeline.to(title, {duration: 0.8, delay: 0.2, y: 0})
+timeline.to(intro, {duration: 0.6, delay: -0.4, x: 0} )
+timeline.to(projets, {duration: 0.4, delay: -0.4, opacity: 1})
+timeline.to(nav, {duration: 0.6, y: 0});
 
 // -------------------------- menu ---------------------------- 
 const menu = document.querySelector('.menu');
@@ -31,6 +46,8 @@ menu.addEventListener('click', closeMenu);
 menuItem.forEach(item => {
     item.addEventListener('click', closeMenu);
 })
+
+
 
 
 // ----------------------------------- Chart --------------------------- 
@@ -105,6 +122,7 @@ function afficherProjets(data){
         createCard(projet)
 
         // titre.innerText = projet.titre;
+        
 
     })
 }
@@ -170,7 +188,7 @@ function createCard(projet){
     linksContent.appendChild(lienGithub);
     
     projetsCards.appendChild(card);
-    console.log("🚀 ~ file: main.js:101 ~ createCard ~ card:", card)
+    console.log("🚀 ~ file: main.js:101 ~ createCard ~ card:", card);
 
     
     // -------------------------------- fonction pour afficher les infos du projet au clic --------------------- 
@@ -189,6 +207,5 @@ function createCard(projet){
             heightIndex--;
         }
     })
+
 }
-
-
