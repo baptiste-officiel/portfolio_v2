@@ -4,6 +4,7 @@ import { Chart } from 'chart.js/auto';
 import gsap from 'gsap';
 
 
+
 // ------------------------------------- animations gsap ---------------------------- 
 let timeline = gsap.timeline();
 
@@ -50,62 +51,62 @@ menuItem.forEach(item => {
 
 
 
-// ----------------------------------- Chart --------------------------- 
-const chartCompetences = document.getElementById('competencesCanvas');
+// // ----------------------------------- Chart --------------------------- 
+// const chartCompetences = document.getElementById('competencesCanvas');
 
-const labels = ['HTML', 'CSS / SASS', 'JavaScript', 'Typescript', 'React', 'Figma', 'GitHub', 'Bootstrap'];
-const data = {
-    labels: labels,
-    datasets: [{
-        label: 'Compétences',
-        data: [90, 100, 95, 70, 45, 35, 30, 30],
-        // backgroundColor: 'rgb(255, 99, 132)'
-        backgroundColor: [
-            'rgba(232, 46, 0, 0.4)',
-            'rgba(0, 46, 232, 0.4)',
-            'rgba(234, 212, 28, 0.4)',
-            'rgba(0, 105, 175, 0.4)',
-            'rgba(42, 209, 255, 0.4)',
-            'rgba(136, 38, 255, 0.4)',
-            'rgba(218, 218, 218, 0.4)',
-            'rgba(95, 0, 227, 0.4)'
-        ],
-        borderColor: [
-            'rgb(232, 46, 0)',
-            'rgb(0, 46, 232)',
-            'rgb(234, 212, 28)',
-            'rgb(0, 105, 175)',
-            'rgb(42, 209, 255)',
-            'rgb(136, 38, 255)',
-            'rgb(218, 218, 218)',
-            'rgb(95, 0, 227)'
-        ],
-        borderWidth: 2,
-        borderRadius: 2
-        // hoverOffset: 40
-    }]
-};
+// const labels = ['HTML', 'CSS / SASS', 'JavaScript', 'Typescript', 'React', 'Figma', 'GitHub', 'Bootstrap'];
+// const data = {
+//     labels: labels,
+//     datasets: [{
+//         label: 'Compétences',
+//         data: [90, 100, 95, 70, 45, 35, 30, 30],
+//         // backgroundColor: 'rgb(255, 99, 132)'
+//         backgroundColor: [
+//             'rgba(232, 46, 0, 0.4)',
+//             'rgba(0, 46, 232, 0.4)',
+//             'rgba(234, 212, 28, 0.4)',
+//             'rgba(0, 105, 175, 0.4)',
+//             'rgba(42, 209, 255, 0.4)',
+//             'rgba(136, 38, 255, 0.4)',
+//             'rgba(218, 218, 218, 0.4)',
+//             'rgba(95, 0, 227, 0.4)'
+//         ],
+//         borderColor: [
+//             'rgb(232, 46, 0)',
+//             'rgb(0, 46, 232)',
+//             'rgb(234, 212, 28)',
+//             'rgb(0, 105, 175)',
+//             'rgb(42, 209, 255)',
+//             'rgb(136, 38, 255)',
+//             'rgb(218, 218, 218)',
+//             'rgb(95, 0, 227)'
+//         ],
+//         borderWidth: 2,
+//         borderRadius: 2
+//         // hoverOffset: 40
+//     }]
+// };
 
-const config = {
-    type: 'bar',
-    data: data,
-    options: {
-        plugins: {
-            legend: {
-                display: false
-            }
-        },
-        responsive: true,
-        maintainAspectRatio: true,
-    }
-};
+// const config = {
+//     type: 'bar',
+//     data: data,
+//     options: {
+//         plugins: {
+//             legend: {
+//                 display: false
+//             }
+//         },
+//         responsive: true,
+//         maintainAspectRatio: true,
+//     }
+// };
 
-new Chart(chartCompetences, config);
+// new Chart(chartCompetences, config);
 
 
 
 // ------------------------------------ projets -------------------------- 
-let url = '../data/projets.json';
+let url = '../assets/data/projets.json';
 const projetsCards = document.querySelector('.projets-cards');
 
 try{

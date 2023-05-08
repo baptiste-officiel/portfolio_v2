@@ -6,7 +6,11 @@
 }
 
 @mixin h2-size{
-  font-size: clamp(26px, 5vmin, 48px);
+  font-family: 'Montserrat';
+  font-size: clamp(26px, 8vmin, 48px);
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
 }
 
 @mixin button-style{
@@ -44,8 +48,11 @@
 }
 
 // ----------------------------- variables ------------------------ 
-$background-color: #181818;
-$primary-color: #E9724C;
+$background-color: #0d0c25;
+$background-color-lighter: #18163a;
+// $primary-color: #E9724C;
+// $primary-color: #35C6AD;
+$primary-color: #6582D2;
 $text-color: #f8f8f8;
 // $primary-color: #E9724C;
 
@@ -85,9 +92,9 @@ body{
 
 // ----------------------------------------------- style global ------------------------------ 
 h1, h2, h3{
-  font-family: 'kilby', 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   span{
-    font-family: 'kilby', 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
 }
 
@@ -99,6 +106,7 @@ a{
   text-decoration: none;
   color: $text-color;
 }
+
 
 // -------------------------------------------- header -----------------------------------
 // ---------- burger ---------- 
@@ -112,7 +120,7 @@ header .nav .burger-menu{
   .burger-menu-item{
     width: 25px;
     height: 3px;
-    background-color: $primary-color;
+    background-color: $text-color;
     margin-bottom: 5px;
     will-change: transform;
     border-radius: 6px;
@@ -180,6 +188,9 @@ header{
     // z-index: -1;
     z-index: 2;
     transform: translateY(-100%);
+    .name-title h3{
+      font-weight: 300;
+    }
     .menu{
       text-transform: uppercase;
       font-weight: 300;
@@ -228,16 +239,19 @@ header{
         }
         &:last-child a{
           background-color: $primary-color;
+          // background: rgb(101,130,210);
+          // background: linear-gradient(157deg, rgba(101,130,210,1) 8%, rgba(131,58,180,1) 55%, rgba(253,29,29,1) 98%);
           padding: 10px 15px;
           margin-top: 15px;
           border-radius: 6px;
-          border: 1px solid $primary-color;
           transition: 0.4s;
+          border: 1px solid $primary-color;
           &::before{
             display: none;
           }
           &:hover{
             background: none;
+            // border: 1px solid #fff;
           }
         }
       }
@@ -253,7 +267,11 @@ header .intro{
   overflow: hidden;
   // overflow-y: visible;
   h1, span{
-    font-size: clamp(28px, 6vmin, 54px);
+    position: relative;
+    z-index: 1;
+    font-size: clamp(28px, 9vmin, 64px);
+    line-height: 4rem;
+    font-weight: 800;
     span{
       @include txt-transparent();
     }
@@ -271,7 +289,7 @@ header .intro{
       width: 100%;
       max-width: 200px;
       height: auto;
-      // padding: 0 1rem;
+      // padding: 0 1rem;*
       
       margin: 0 0 2rem auto;
       // align-self: flex-end;
@@ -349,7 +367,8 @@ main .projets .projets-cards{
     .card-title{
       text-align: center;
       padding: 1rem 0 0;
-      font-size: 1.6rem;
+      font-size: 1.8rem;
+      font-weight: 400;
       // border-bottom: none;
     }
     .card-langages{
@@ -381,6 +400,9 @@ main .projets .projets-cards{
     .card-lien_site, .card-lien_github{
       @include button-style();
     }
+    .card-lien_github{
+      color: $primary-color;
+    }
     .card-lien_site::before{
       @include button-style-before();
     }
@@ -404,30 +426,52 @@ main .competences{
     min-width: 110vw;
     // gap: 5vmin;
     h2{
-      font-size: 1.4rem;
-      min-width: 250px;
+      @include h2-size();
+      font-size: 1.6rem;
+      min-width: 280px;
       will-change: transform;
       animation: slide 1.6s infinite linear;
     }
   }
   padding-bottom: 32px;
-  .canvas{
-    width: 100%;
-    height: 100%;
-    padding: 4rem 1rem;
-    display: flex;
-    justify-content: center;
-    canvas{
-      width: 100%;
-      max-width: 700px;
-      max-height: 400px;
-    }
-  }
 }
 
 @keyframes slide {
   100%{
     transform: translateX(-100%);
+  }
+}
+
+main .competences .competences-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem auto;
+  .competences-list{
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .competences-list-item{
+      width: 48%;
+      height: 50px;
+      padding: 0.2rem 0.6rem;
+      margin: 0.4rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: $primary-color 1px solid;
+      border-radius: 6px;
+      &.best{
+        background-color: $primary-color;
+      }
+      span{
+        img{
+          height: 24px;
+        }
+      }
+    }
   }
 }
 
@@ -440,12 +484,9 @@ main .competences{
   .contact-title, span{
     @include h2-size();
     text-align: right;
-  span{
-    @include txt-transparent();
-    }
   }
   .contact-content{
-    background-color: #202020;
+    background-color: $background-color-lighter;
     border-top-right-radius: 24px;
     border-top-left-radius: 24px;
     margin-top: 6rem;
@@ -479,7 +520,7 @@ main .competences{
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
-    background: #202020;
+    background: $background-color-lighter;
     padding: 2rem 0.8rem;
     input, textarea{
       width: 95%;
@@ -517,7 +558,7 @@ main .competences{
 footer{
   text-align: center;
   padding: 1rem 0;
-  background: #202020;
+  background: $background-color-lighter;
   p, a{
     font-size: 0.8rem;
     font-weight: 200;
@@ -559,10 +600,12 @@ footer{
       display: flex;
       justify-content: space-between;
       // margin-top: 10rem;
-      padding: 10rem 0 0;
+      padding: 10rem 1rem 0;
       gap: 5rem; 
       // min-height: 40vh;
-
+      h1 span{
+          @include txt-transparent();
+      }
       .txt-intro{
         // img{
         //   position: absolute;
@@ -672,6 +715,9 @@ main .competences{
   align-items: center;
   .contact-title{
     width: 100%;
+    span{
+      @include txt-transparent();
+    }
   }
   .contact-content{
     background: none;
