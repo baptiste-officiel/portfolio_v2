@@ -3,7 +3,7 @@
         "titre": "McRecette",
         "image" : "../assets/img/mcrecette.png",
         "langages" : ["React", "React Router", "Fetch", "styled-components", "framer-motion", "Splide"],
-        "description" : "Projet <strong>React</strong>, il s'agit d'un site de recettes. Les données proviennent d'une API. J'ai utilisé <strong>React Router</strong> pour naviguer entre les différentes pages, <strong>styled-components</strong> pour le style.",
+        "description" : "<strong>React</strong> project, it's a recipes website. All the data come from an API named 'Spoonacular'. I used <strong>React Router</strong> to navigate between the different pages and <strong>styled-components</strong> for styling, obviously.",
         "site" : "http://mcrecette.alwaysdata.net/",
         "github" : "https://github.com/baptiste-officiel/McRecette"
     },
@@ -11,15 +11,15 @@
         "titre": "Portfolio",
         "image" : "../assets/img/portfolio.png",
         "langages" : ["HTML", "SCSS/SASS", "JavaScript", "Vite.js", "JSON", "Emailjs"],
-        "description" : "Tout d'abord mon Portfolio réalisé par mes soins. J'ai initialisé le projet grâce à <strong>Vite.js</strong> puis développé la partie Front-End en <strong>HTML</strong>, <strong>SCSS</strong>. J'ai utilisé du <strong>JavaScript</strong> et <strong>JSON</strong> afin d'afficher la liste de mes projets. Ensuite je me suis servi d'<strong>Emailjs</strong> afin d'envoyer le formulaire de contact par mail.",
+        "description" : "My own portfolio, made by me, from scratch. I initialized the project with <strong>Vite.js</strong>, then I developped the Front-End in <strong>HTML</strong>, <strong>SCSS</strong>. I used <strong>JavaScript</strong> and <strong>JSON</strong> to display my projects.Finally I made the choice of <strong>Emailjs</strong> so I can receive the form directly in my Mail Box.",
         "site" : "#",
         "github" : "https://github.com/baptiste-officiel/LADP"
     },
     {
         "titre": "LADP",
         "image" : "../assets/img/ladp.png",
-        "langages" : ["HTML", "CSS", "SCSS/SASS", "JavaScript", "PHP", "MySQL"],
-        "description" : "Site Web <strong>from Scratch</strong> pour une société de location d'ULM. Premier projet réalisé pour un client. J'ai développé la partie Front-End en <strong>HTML</strong>, <strong>SCSS</strong>, j'ai pu ajouté du <strong>JavaScript</strong> pour gérer quelques animations. Pour la partie Back-End, j'ai utilisé <strong>PHP</strong> ainsi que <strong>MySQL</strong> pour créer et enregistrer les données du formulaire de contact en base de données. J'ai également découvert la fonction <strong>mail()</strong> de <strong>PHP</strong> que j'ai utilisé pour envoyer le formulaire par email au propriétaire du site",
+        "langages" : ["React", "Vitejs", "React Router", "CSS modules", "Emailjs"],
+        "description" : "Website <strong>from Scratch</strong> for a plane rent enterprise. My first customer project. The website has been made with <strong>React</strong>, <strong>react-router</strong>, <strong>CSS modules</strong>. I also send the form by mail with <strong>Emailjs</strong>.",
         "site" : "http://baptiste-officiel.alwaysdata.net/",
         "github" : "https://github.com/baptiste-officiel/LADP"
     },
@@ -27,7 +27,7 @@
         "titre": "Ultra Shape",
         "image" : "../assets/img/ultrashape.png",
         "langages" : ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-        "description" : "Site Web <strong>from Scratch</strong>. Il s'agit de mon projet de fin de formation. Le but était ici d'utiliser les 5 langages appris au cours de cette formation et de réaliser un site responsive, dynamique, avec une partie <strong>Front-End</strong> et <strong>Back-End</strong> et une partie Admin ayant accès à la base de données.",
+        "description" : "Website <strong>from Scratch</strong>. Here is my graduation project. The point here, was to make a responsive, dynamic website using the 5 languages learned at school with a <strong>Front-End</strong> and <strong>Back-End</strong> part. We also had to create an Admin who could access the database.",
         "site" : "http://ultra-shape.alwaysdata.net/",
         "github" : "https://github.com/baptiste-officiel/UltraShape"
     },
@@ -35,7 +35,7 @@
         "titre": "Pokedex",
         "image" : "../assets/img/pokedex.png",
         "langages" : ["HTML", "SCSS/SASS", "JavaScript", "API"],
-        "description" : "Projet <strong>from Scratch</strong>. Il s'agit ici d'une récupération et réutilisation de données provenant d'une <strong>API</strong>, l'API Pokemon. Le but étant de créer un Pokedex répertoriant les Pokemon et d'afficher leur nom, photo et quelques données.",
+        "description" : "Project <strong>from Scratch</strong>. My job was to fetch and use the data of an <strong>API</strong>, Pokemon API. I used the data to make a Pokedex with informations about the pokemons.",
         "site" : "https://baptiste-officiel.github.io/Pokedex/",
         "github" : "https://github.com/baptiste-officiel/Pokedex"
     },
@@ -43,7 +43,7 @@
         "titre": "App Météo",
         "image" : "../assets/img/meteo.png",
         "langages" : ["HTML", "SCSS/SASS", "JavaScript", "API"],
-        "description" : "Projet <strong>from Scratch</strong>. On récupère les données provenant de l'<strong>API</strong> \"OpenMeteo\" et on les utilise afin de créer une app météo. Cela m'a permis de faire des appels à une <strong>API</strong> et de manipuler le <strong>DOM</strong>.",
+        "description" : "Project <strong>from Scratch</strong>. Fetching the date of the <strong>API</strong> \"OpenMeteo\" and using them to make a weather app. It allowed me to make calls to an <strong>API</strong> and manipulate the <strong>DOM</strong>.",
         "site" : "https://baptiste-officiel.github.io/appMeteo/",
         "github" : "https://github.com/baptiste-officiel/appMeteo"
     },
@@ -51,7 +51,7 @@
         "titre": "Recherche Dynamique",
         "image" : "../assets/img/recherche_dynamique.png",
         "langages" : ["HTML", "SCSS/SASS", "JavaScript", "TypeScript", "API"],
-        "description" : "Projet <strong>from Scratch</strong>. Dans ce projet, on récupère des données provenant d'une <strong>API</strong>, l'API \"RandomUsers\", et on crée un tableau contenant les utilisateurs. On ajoute ensuite une barre de recherche qui filtre les utilisateurs au fur et à mesure de la recherche. Dans ce projet j'ai pu faire des appels à une <strong>API</strong> et découvrir <strong>TypeScript</strong>.",
+        "description" : "Project <strong>from Scratch</strong>. Users come from an Api <strong>API</strong>, \"RandomUsers\" API, then we create a table of users. We also add a search nav to find our users by their name. I discovered <strong>Typescript</strong> in this challenge.",
         "site" : "https://baptiste-officiel.github.io/recherche_dynamique/",
         "github" : "https://github.com/baptiste-officiel/recherche_dynamique"
     },
@@ -59,7 +59,7 @@
         "titre": "Sphère 3D",
         "image" : "../assets/img/sphere.png",
         "langages" : ["HTML", "CSS", "JavaScript", "Three.js"],
-        "description" : "Projet <strong>from Scratch</strong>. Découverte, première manipulation de <strong>Three.js</strong> afin de manipuler des <strong>objets 3D</strong>. On peut ici apercevoir une sphère en rotation et la faire tourner manuellement.",
+        "description" : "Project <strong>from Scratch</strong>. Discovery of <strong>Three.js</strong> to use <strong>3D objects</strong>. We can see here a rotating sphere, we can manually make it turn.",
         "site" : "https://sphere-threejs.alwaysdata.net/",
         "github" : "https://github.com/baptiste-officiel/ThreeJS/tree/main/three-js-project-1"
     }

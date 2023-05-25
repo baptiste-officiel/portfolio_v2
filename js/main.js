@@ -1,5 +1,5 @@
 // import '../style/style.scss';
-import { Chart } from 'chart.js/auto';
+// import { Chart } from 'chart.js/auto';
 // import emailjs_key from './emailjs_key';
 import gsap from 'gsap';
 
@@ -9,7 +9,7 @@ import gsap from 'gsap';
 let timeline = gsap.timeline();
 
 const nav = document.querySelector('.nav');
-const title = document.querySelector('.intro h1');
+const title = document.querySelector('.intro .intro-title');
 const intro = document.querySelector('.intro .txt-intro');
 const projets = document.querySelector('.projets');
 
@@ -17,6 +17,22 @@ timeline.to(title, {duration: 0.8, delay: 0.2, y: 0})
 timeline.to(intro, {duration: 0.6, delay: -0.4, x: 0} )
 timeline.to(projets, {duration: 0.4, delay: -0.4, opacity: 1})
 timeline.to(nav, {duration: 0.6, y: 0});
+
+// ---------------------------------------- cursor ------------------------------------ 
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    console.log(e.pageY);
+    cursor.setAttribute(`style`, `top:${e.pageY - 20}px; left:${e.pageX - 20}px;`)
+})
+
+document.addEventListener('click', e => {
+    cursor.classList.add('expand');
+
+    setTimeout(() => {
+        cursor.classList.remove('expand')
+    }, 500);
+})
 
 // -------------------------- menu ---------------------------- 
 const menu = document.querySelector('.menu');
