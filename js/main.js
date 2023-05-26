@@ -130,8 +130,8 @@ fetch(url).then(response => response.json()).then(data => {
 } catch (err){
 }
 
-function afficherProjets(data){
-    data.map(projet => {
+async function afficherProjets(data){
+    await data.map(projet => {
 
         createCard(projet)
 
