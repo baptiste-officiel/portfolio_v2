@@ -119,7 +119,7 @@ menuItem.forEach(item => {
 
 
 // ------------------------------------ projets -------------------------- 
-let url = '/assets/data/projets.json';
+let url = './projets.json';
 const projetsCards = document.querySelector('.projets-cards');
 
 async function getProjects(){
