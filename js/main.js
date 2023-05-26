@@ -4,7 +4,6 @@
 import gsap from 'gsap';
 
 
-
 // ------------------------------------- animations gsap ---------------------------- 
 let timeline = gsap.timeline();
 
@@ -126,6 +125,7 @@ const projetsCards = document.querySelector('.projets-cards');
 async function getProjects(){
     try{
         await fetch(url).then(response => response.json()).then(data => {
+            console.log(data);
             afficherProjets(data);
         })
         } catch (err){
