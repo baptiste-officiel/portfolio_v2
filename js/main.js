@@ -22,7 +22,6 @@ timeline.to(nav, {duration: 0.6, y: 0});
 const cursor = document.querySelector('.cursor');
 
 document.addEventListener('mousemove', e => {
-    console.log(e.pageY);
     cursor.setAttribute(`style`, `top:${e.pageY - 20}px; left:${e.pageX - 20}px;`)
 })
 
@@ -55,7 +54,6 @@ burger.addEventListener('click', () => {
         item.classList.toggle('active-item')
     })
 
-    console.log(burgerItems);
 })
 
 menu.addEventListener('click', closeMenu);
@@ -134,7 +132,6 @@ fetch(url).then(response => response.json()).then(data => {
 
 function afficherProjets(data){
     data.map(projet => {
-        console.log(projet);
 
         createCard(projet)
 
@@ -180,7 +177,6 @@ function createCard(projet){
     })
     // console.log(langages);
     langages.innerHTML = langagesArray.join('');
-    console.log("🚀 ~ file: main.js:110 ~ createCard ~ langages:", langages)
     cardContent.appendChild(langages);
     
     const description = document.createElement('p');
@@ -205,7 +201,6 @@ function createCard(projet){
     linksContent.appendChild(lienGithub);
     
     projetsCards.appendChild(card);
-    console.log("🚀 ~ file: main.js:101 ~ createCard ~ card:", card);
 
     
     // -------------------------------- fonction pour afficher les infos du projet au clic --------------------- 
@@ -226,3 +221,5 @@ function createCard(projet){
     })
 
 }
+
+

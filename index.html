@@ -9,85 +9,73 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
   <link rel="stylesheet" href="./style/style.css">
-  <meta name="description" content="Développeur JavaScript à la recherche d'une alternance de 24 mois en développement Front-End React OU d'un emploi">
-  <!-- <link rel="stylesheet" href="style.scss"> -->
+  <meta name="description"
+    content="Développeur JavaScript à la recherche d'une alternance de 24 mois en développement Front-End React OU d'un emploi">
 </head>
 
 <body>
   <div class="cursor"></div>
-  <!-- <div id="app"></div> -->
 
+  <main>
+    <div class="bandeau"></div>
+    <header class="container">
+      <nav class="nav container">
+        <a href="/" class="name-title">
+          <h3>Baptiste Lejeune</h3>
+        </a>
 
-   <!-- <div class="loader">
-  <div class="loader-box">
-      <span></span>
-       <span></span>
-   <span></span>
-   <span></span> 
-  </div> 
-</div>  -->
+        <div class="burger-menu">
+          <span class="burger-menu-item"></span>
+          <span class="burger-menu-item"></span>
+          <span class="burger-menu-item"></span>
+        </div>
 
-<main>
-  <div class="bandeau"></div>
-  <header class="container">
-    <nav class="nav container">
-      <a href="/" class="name-title">
-        <h3>Baptiste Lejeune</h3>
-      </a>
+        <ul class="menu">
+          <li class="item-menu"><a href="/">about</a></li>
+          <li class="item-menu"><a href="#projets-section">Projects</a></li>
+          <li class="item-menu"><a href="#competences-section">skills</a></li>
+          <li class="item-menu"><a href="#contact-section">Contact</a></li>
+        </ul>
+      </nav>
 
-      <div class="burger-menu">
-        <span class="burger-menu-item"></span>
-        <span class="burger-menu-item"></span>
-        <span class="burger-menu-item"></span>
+      <div class="header-content">
+        <img src="./assets/img/profile.jpg" alt="Baptiste Lejeune Portrait">
+        <div class="intro container">
+
+          <div class="intro-title">
+            <h1>Hi, I'm Baptiste Lejeune</h1>
+            <h2>Web Developper, Javascript React</h2>
+          </div>
+
+          <div class="txt-intro">
+            <p>My name is Baptiste LEJEUNE. I'm a 25 years old <strong>Javascript React Developper</strong> from France,
+              graduated and self-taught.
+            </p>
+            <h4>Languages</h4>
+            <ul>
+              <li><span>French </span>Native</li>
+              <li><span>English </span>Basic Fluent</li>
+            </ul>
+          </div>
+        </div>
       </div>
-
-      <ul class="menu">
-        <li class="item-menu"><a href="/">about</a></li>
-        <li class="item-menu"><a href="#projets-section">Projects</a></li>
-        <li class="item-menu"><a href="#competences-section">skills</a></li>
-        <li class="item-menu"><a href="#contact-section">Contact</a></li>
-      </ul>
-    </nav>
-
-<div class="header-content">
-  <img src="./assets/img/profile.jpg" alt="Baptiste Lejeune Portrait">
-  <div class="intro container">
-
-    <div class="intro-title">
-      <h1>Hi, I'm Baptiste Lejeune</h1>
-    <h2>Web Developper, Javascript React</h2>
-    </div>
-
-    <!-- <div class="img"> -->
-      
-      <!-- </div> -->
-      
-      <div class="txt-intro">
-      <p>My name is Baptiste LEJEUNE. I'm a 25 years old <strong>Javascript React Developper</strong> from France, graduated and self-taught.
-      </p>
-      <h4>Languages</h4>
-      <ul>
-        <li><span>French </span>Native</li>
-        <li><span>English </span>Basic Fluent</li>
-      </ul>
-    </div>
-  </div>
-</div>
-  </header>
+    </header>
 
 
     <section id="projets-section" class="projets container">
-<h2 class="projets-title">Projects</h2>
+      <h2 class="projets-title">Projects</h2>
 
       <p class="txt-projets">All the projects are available on Github, follow <a
           href="https://github.com/baptiste-officiel" target="_blank" title="GitHub">this link</a></p>
 
-       <div class="projets-cards container">
-      </div> 
+      <div class="projets-cards container">
+      </div>
     </section>
 
     <section id="competences-section" class="competences">
@@ -114,8 +102,6 @@
         <h2 class="section-title">Skills</h2>
       </div>
 
-      <!-- <div class="canvas container"> <canvas id="competencesCanvas"></canvas> -->
-        
       <div class="competences-container container">
         <ul class="competences-list">
           <li class="competences-list-item best">JavaScript <span><img src="./assets/img/rocket.svg" alt=""></span></li>
@@ -135,42 +121,44 @@
 
       <div class="contact-content">
         <img src="./assets/img/img_contact.png" alt="">
-        
+
         <div class="contact-content-links">
-          <div><a href="https://www.linkedin.com/in/baptiste-lejeune-44032a250/" target="_blank" title="Linkedin"><img src="./assets/img/linkedin.svg" alt="Linkedin">Linkedin</a></div>
-          <div><a href="https://github.com/baptiste-officiel" target="_blank" title="GitHub"><img src="./assets/img/github.svg" alt="Linkedin">Github</a></div>
+          <div><a href="https://www.linkedin.com/in/baptiste-lejeune-44032a250/" target="_blank" title="Linkedin"><img
+                src="./assets/img/linkedin.svg" alt="Linkedin">Linkedin</a></div>
+          <div><a href="https://github.com/baptiste-officiel" target="_blank" title="GitHub"><img
+                src="./assets/img/github.svg" alt="Linkedin">Github</a></div>
         </div>
         <div class="contact-content-text">
           <div><a href="tel:+33604134925"><img src="./assets/img/phone.svg" alt="Téléphone">06 04 13 49 25</a></div>
-          <div><a href="mailto:baptiste.lejeune@hotmail.com"><img src="./assets/img/mail.svg" alt="Mail">baptiste.lejeune@hotmail.com</a></div>
+          <div><a href="mailto:baptiste.lejeune@hotmail.com"><img src="./assets/img/mail.svg"
+                alt="Mail">baptiste.lejeune@hotmail.com</a></div>
           <div><img src="./assets/img/position.svg" alt="Lieu">Lille / Paris</div>
         </div>
       </div>
 
-        <form method="post" class="contact-form" id="contact-form">
-          <input type="text" name="user_name" id="user_name" placeholder="Name" required>
-          <input type="text" name="user_firstname" id="user_firstname" placeholder="Firstname" required>
-          <input type="email" name="user_email" id="user_email" placeholder="E-mail" required>
-          <input type="text" name="object" id="object" placeholder="Object" required>
-          <textarea name="content" id="content" cols="30" rows="10" required placeholder="Message"></textarea>
-  
-          <button type="submit">Send</button>
-        </form>
-  
+      <form method="post" class="contact-form" id="contact-form">
+        <input type="text" name="user_name" id="user_name" placeholder="Name" required>
+        <input type="text" name="user_firstname" id="user_firstname" placeholder="Firstname" required>
+        <input type="email" name="user_email" id="user_email" placeholder="E-mail" required>
+        <input type="text" name="object" id="object" placeholder="Object" required>
+        <textarea name="content" id="content" cols="30" rows="10" required placeholder="Message"></textarea>
 
+        <button type="submit">Send</button>
+      </form>
     </section>
 
     <footer>
       <p>Made by Baptiste Lejeune</p>
-      <p>Image by <a href="https://www.freepik.com/free-psd/3d-rendering-graphic-design_31164767.htm#from_view=detail_serie">Freepik</a></p>
+      <p>Image by <a
+          href="https://www.freepik.com/free-psd/3d-rendering-graphic-design_31164767.htm#from_view=detail_serie">Freepik</a>
+      </p>
     </footer>
   </main>
 
 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script type="module" src="js/main.js"></script>
-  <script type="text/javascript" src="./js/emailjs_key.js"></script>
-  <script type="text/javascript" src="./js/emailjs.js"></script>
+  <script type="module" src="js/emailjs.js"></script>
 
 </body>
 
