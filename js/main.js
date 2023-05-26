@@ -123,21 +123,18 @@ menuItem.forEach(item => {
 let url = '../assets/data/projets.json';
 const projetsCards = document.querySelector('.projets-cards');
 
-try{
-fetch(url).then(response => response.json()).then(data => {
-    afficherProjets(data);
-})
-} catch (err){
+async function getProjects(){
+    try{
+        await fetch(url).then(response => response.json()).then(data => {
+            afficherProjets(data);
+        })
+        } catch (err){
+        }
 }
 
 async function afficherProjets(data){
     await data.map(projet => {
-
         createCard(projet)
-
-        // titre.innerText = projet.titre;
-        
-
     })
 }
 
@@ -222,4 +219,5 @@ function createCard(projet){
 
 }
 
+getProjects();
 
