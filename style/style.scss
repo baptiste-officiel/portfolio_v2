@@ -327,7 +327,7 @@ header .header-content img{
   // margin: 0 0 2rem auto;
   margin: 8rem auto 0;
   // align-self: flex-end;
-
+  opacity: 0;
 }
 
 header .intro{
@@ -366,7 +366,9 @@ header .intro{
   }
   .txt-intro{
     // margin-top: -100px;
-    transform: translateX(220%);
+    transform: translateY(100%);
+    position: relative;
+    z-index: -1;
 
     padding: 2rem 0 1rem;
     font-weight: 300;

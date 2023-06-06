@@ -30,5 +30,37 @@
         "description" : "Website <strong>from Scratch</strong>. Here is my graduation project. The point here, was to make a responsive, dynamic website using the 5 languages learned at school with a <strong>Front-End</strong> and <strong>Back-End</strong> part. We also had to create an Admin who could access the database.",
         "site" : "http://ultra-shape.alwaysdata.net/",
         "github" : "https://github.com/baptiste-officiel/UltraShape"
+    },
+    {
+        "titre": "Pokedex",
+        "image" : "./pokedex.png",
+        "langages" : ["HTML", "SCSS/SASS", "JavaScript", "API"],
+        "description" : "Project <strong>from Scratch</strong>. My job was to fetch and use the data of an <strong>API</strong>, Pokemon API. I used the data to make a Pokedex with informations about the pokemons.",
+        "site" : "https://baptiste-officiel.github.io/Pokedex/",
+        "github" : "https://github.com/baptiste-officiel/Pokedex"
+    },
+    {
+        "titre": "App Météo",
+        "image" : "./meteo.png",
+        "langages" : ["HTML", "SCSS/SASS", "JavaScript", "API"],
+        "description" : "Project <strong>from Scratch</strong>. Fetching the date of the <strong>API</strong> \"OpenMeteo\" and using them to make a weather app. It allowed me to make calls to an <strong>API</strong> and manipulate the <strong>DOM</strong>.",
+        "site" : "https://baptiste-officiel.github.io/appMeteo/",
+        "github" : "https://github.com/baptiste-officiel/appMeteo"
+    },
+    {
+        "titre": "Recherche Dynamique",
+        "image" : "./recherche_dynamique.png",
+        "langages" : ["HTML", "SCSS/SASS", "JavaScript", "TypeScript", "API"],
+        "description" : "Project <strong>from Scratch</strong>. Users come from an Api <strong>API</strong>, \"RandomUsers\" API, then we create a table of users. We also add a search nav to find our users by their name. I discovered <strong>Typescript</strong> in this challenge.",
+        "site" : "https://baptiste-officiel.github.io/recherche_dynamique/",
+        "github" : "https://github.com/baptiste-officiel/recherche_dynamique"
+    },
+    {
+        "titre": "Sphère 3D",
+        "image" : "./sphere.png",
+        "langages" : ["HTML", "CSS", "JavaScript", "Three.js"],
+        "description" : "Project <strong>from Scratch</strong>. Discovery of <strong>Three.js</strong> to use <strong>3D objects</strong>. We can see here a rotating sphere, we can manually make it turn.",
+        "site" : "https://sphere-threejs.alwaysdata.net/",
+        "github" : "https://github.com/baptiste-officiel/ThreeJS/tree/main/three-js-project-1"
     }
 ]
