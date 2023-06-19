@@ -543,21 +543,20 @@ main .competences .competences-container{
     align-items: center;
     .competences-list-item{
       width: 48%;
-      height: 50px;
-      padding: 0.2rem 0.6rem;
+      // height: 50px;
+      min-height: 120px;
+      padding: 1rem 0.6rem;
       margin: 0.4rem 0;
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
       align-items: center;
       border: $primary-color 1px solid;
       border-radius: 6px;
-      &.best{
-        background-color: $primary-color;
-      }
-      span{
-        img{
-          height: 24px;
-        }
+      img{
+        height: 60px;
+        width: 60px;
+        margin-bottom: 1rem;
       }
     }
   }
