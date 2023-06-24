@@ -78,13 +78,15 @@ body{
 .cursor{
   width: 40px;
   height: 40px;
-  background-color: rgba($color: $primary-color, $alpha: 0.15);
-  border: 1px solid rgba($color: $text-color, $alpha: 1);
+  background: rgba($color: $primary-color, $alpha: 1);
+  // background: $text-color;
+  // border: 1px solid rgba($color: $text-color, $alpha: 1);
   border-radius: 50%;
   position: absolute;
   z-index: 2;
   pointer-events: none;
   display: none;
+  mix-blend-mode: difference;
 }
 
 .expand{
