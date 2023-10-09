@@ -14,7 +14,8 @@
   "dependencies": {
     "chart.js": "^4.2.1",
     "gsap": "^3.11.5",
-    "sass": "^1.59.3"
+    "sass": "^1.59.3",
+    "three": "^0.157.0"
   },
   "main": "main.js",
   "author": "",

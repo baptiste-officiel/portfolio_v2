@@ -10,7 +10,7 @@ let timeline = gsap.timeline();
 const nav = document.querySelector('.nav');
 const imgIntro = document.querySelector('.header-content img');
 const title = document.querySelector('.intro .intro-title');
-const intro = document.querySelector('.intro .txt-intro');
+const intro = document.querySelector('.txt-intro');
 const projets = document.querySelector('.projets');
 
 timeline.to(title, {duration: 0.6, delay: 0, y: 0})

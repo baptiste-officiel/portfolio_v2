@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Développeur JavaScript à la recherche d'une alternance de 24 mois en développement Front-End React OU d'un emploi">
+  <meta name="description"
+    content="Développeur JavaScript à la recherche d'une alternance de 24 mois en développement Front-End React OU d'un emploi">
   <title>Baptiste LEJEUNE</title>
   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
   <link rel="stylesheet" href="./style/style.css">
@@ -42,26 +43,29 @@
       </nav>
 
       <div class="header-content">
-        <img src="./assets/img/profile.jpg" alt="Baptiste Lejeune Portrait">
-        <div class="intro container">
 
-          <div class="intro-title">
-            <h1>Hi, I'm Baptiste Lejeune</h1>
-            <h2>Web Developper, Javascript React</h2>
-          </div>
+        <h1>Hi, I'm Baptiste Lejeune</h1>
+        <!-- <h2>Web Developper, Javascript React</h2> -->
 
-          <div class="txt-intro">
-            <p>My name is Baptiste LEJEUNE. I'm a 25 years old <strong>Javascript React Developper</strong> from France,
-              graduated and self-taught.
-            </p>
-            <h4>Languages</h4>
-            <ul>
-              <li><span>French </span>Native</li>
-              <li><span>English </span>Basic Fluent</li>
-            </ul>
-          </div>
+        <img src="./assets/img/face_pic.png" alt="Baptiste Lejeune Portrait">
+        <!-- <div class="intro container"> -->
+
+        <h2>Web Developper, Javascript React</h2>
+
+        <canvas id="canvas"></canvas>
+
+        <div class="txt-intro">
+          <p>My name is Baptiste LEJEUNE. I'm a 25 years old <strong>Javascript React Developper</strong> from France,
+            graduated and self-taught.
+          </p>
+          <h4>Languages</h4>
+          <ul>
+            <li><span>French </span>Native</li>
+            <li><span>English </span>Basic Fluent</li>
+          </ul>
         </div>
       </div>
+      <!-- </div> -->
     </header>
 
 
@@ -110,16 +114,39 @@
           <li class="competences-list-item">GitHub</li>
           <li class="competences-list-item">Figma</li>
         </ul> -->
-        <ul class="competences-list">
-          <li class="competences-list-item best"><img src="./assets/img/icons/react.svg" alt="React"><span>React</span></li>
-          <li class="competences-list-item best"><img src="./assets/img/icons/javascript.svg" alt=""><span>JavaScript</span></li>
-          <li class="competences-list-item best"><img src="./assets/img/icons/nextjs.svg" alt=""><span>NEXT.JS</span></li>
-          <li class="competences-list-item best"><img src="./assets/img/icons/mongodb.svg" alt=""><span>MongoDB</span></li>
-          <li class="competences-list-item best"><img src="./assets/img/icons/tailwind.svg" alt=""><span>Tailwind</span></li>
-          <li class="competences-list-item"><img src="./assets/img/icons/typescript.svg" alt=""><span>TypeScript</span></li>
+        <div class="competences-bloc">
+          <h3>Development</h3>
+          <hr>
+          <ul class="competences-list">
+            <li class="competences-list-item best"><img src="./assets/img/icons/nextjs.svg" alt=""><span>NEXT.JS</span>
+            </li>
+            <li class="competences-list-item best"><img src="./assets/img/icons/react.svg"
+                alt="React"><span>React</span></li>
+            <li class="competences-list-item"><img src="./assets/img/icons/typescript.svg"
+                alt=""><span>TypeScript</span></li>
+            <li class="competences-list-item best"><img src="./assets/img/icons/javascript.svg"
+                alt=""><span>JavaScript</span></li>
+            <li class="competences-list-item best"><img src="./assets/img/icons/mongodb.svg" alt=""><span>MongoDB</span>
+            </li>
+          </ul>
+        </div>
+        <div class="competences-bloc">
+          <h3>Styling</h3>
+          <hr>
+          <ul class="competences-list">
+          <li class="competences-list-item best"><img src="./assets/img/icons/tailwind.svg" alt=""><span>Tailwind</span>
+          </li>
+          <li class="competences-list-item best"><img src="./assets/img/icons/sass.svg" alt=""><span>Sass</span></li>
+          </ul>
+        </div>
+        <div class="competences-bloc">
+          <h3>Other</h3>
+          <hr>
+          <ul class="competences-list">
           <li class="competences-list-item"><img src="./assets/img/icons/vercel.svg" alt=""><span>Vercel</span></li>
           <li class="competences-list-item"><img src="./assets/img/icons/github.svg" alt=""><span>GitHub</span></li>
-        </ul>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -127,7 +154,7 @@
       <h2 class="contact-title">Contact<br><span>me</span></h2>
 
       <div class="contact-content">
-        <img src="./assets/img/img_contact.png" alt="">
+        <img src="./assets/img/img_contact.png" alt="" class="pc">
 
         <div class="contact-content-links">
           <div><a href="https://www.linkedin.com/in/baptiste-lejeune-44032a250/" target="_blank" title="Linkedin"><img
@@ -165,6 +192,7 @@
 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/three.js"></script>
   <script type="module" src="js/emailjs.js"></script>
 
 </body>

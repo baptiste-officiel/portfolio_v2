@@ -20,19 +20,21 @@
   background: none;
   border: none;
   outline: none;
-  border: 2px solid $primary-color;
+  border: 3px solid $text-color;
   padding: 1rem;
   margin-top: 0.5rem;
   position: relative;
   overflow: hidden;
   border-radius: 6px;
+  color: $background-color;
+  font-weight: 600;
 }
 
 @mixin button-style-before{
   content: '';
   width: 101%;
   height: 100%;
-  background-color: $primary-color;
+  background-color: $text-color;
   position: absolute;
   top: 0;
   left: 0;
@@ -47,12 +49,15 @@
 }
 
 // ----------------------------- variables ------------------------ 
-$background-color: #070a27;
+// $background-color: #070a27;
+$background-color: #ededed;
 $background-color-lighter: #18163a;
 // $primary-color: #E9724C;
 // $primary-color: #35C6AD;
-$primary-color: #6582D2;
-$text-color: #f8f8f8;
+// $primary-color: #6582D2;
+$primary-color: #0bd168;
+// $text-color: #f8f8f8;
+$text-color: #0b0b0b;
 // $primary-color: #E9724C;
 
 // -------------------------------------------- reset ----------------------------------------------- 
@@ -78,7 +83,7 @@ body{
 .cursor{
   width: 40px;
   height: 40px;
-  background: rgba($color: $primary-color, $alpha: 1);
+  background: rgba($color: #EDEDED, $alpha: 1);
   // background: $text-color;
   // border: 1px solid rgba($color: $text-color, $alpha: 1);
   border-radius: 50%;
@@ -91,8 +96,8 @@ body{
 
 .expand{
   animation: onClick 0.5s;
-  background: $primary-color;
-  border: 1px solid $primary-color;
+  background: #EDEDED;
+  border: 1px solid #EDEDED;
 }
 
 @keyframes onClick {
@@ -151,6 +156,16 @@ a{
   height: 105px;
   z-index: 1;
   display: none;
+  border-bottom: 3px solid $text-color;
+}
+
+#canvas{
+  border: 3px solid $text-color;
+  border-radius: 1rem;
+  // z-index: 20;
+  max-width: 100%;
+  // background-color: red;
+  margin: 1rem 0;
 }
 
 
@@ -234,12 +249,14 @@ header{
     // z-index: -1;
     z-index: 2;
     transform: translateY(-100%);
+    // border-bottom: 3px solid black;
     .name-title h3{
-      font-weight: 300;
+      font-weight: 400;
+      font-size: 1.1rem;
     }
     .menu{
       text-transform: uppercase;
-      font-weight: 300;
+      font-weight: 500;
 
       background: rgba($color: $background-color, $alpha: 0.5);
       backdrop-filter: blur(25px);
@@ -276,7 +293,7 @@ header{
           left: 0;
           width: 100%;
           height: 1px;
-          background-color: $primary-color;
+          background-color: $text-color;
           transform: translateX(-105%);
           transition: transform 0.4s;
         }
@@ -299,12 +316,14 @@ header{
           width: 100%;
           height: 100%;
           // background-color: $primary-color;
-          background: rgb(25,146,255);
-          background: linear-gradient(90deg, rgba(25,146,255,1) 0%, rgba(141,91,173,1) 32%, rgba(180,54,171,1) 100%);
+          // background: rgb(25,146,255);
+          // background: linear-gradient(90deg, rgba(25,146,255,1) 0%, rgba(141,91,173,1) 32%, rgba(180,54,171,1) 100%);
           transform: translateX(0);
           transition: transform 0.4s;
           border-radius: 6px;
           z-index: -1;
+          background: none;
+          border: 2px solid black;
           }
           &:hover{
             background: none;
@@ -321,75 +340,74 @@ header .header-content img{
   display: block;
   z-index: 0;
   width: 100%;
-  max-width: 200px;
+  // max-width: 200px;
   height: auto;
-  border-radius: 12px;
+  border: 3px solid black;
+  border-radius: 1rem;
   // padding: 0 1rem;*
   
   // margin: 0 0 2rem auto;
-  margin: 8rem auto 0;
+  margin: 1rem auto 0;
   // align-self: flex-end;
   opacity: 0;
 }
 
-header .intro{
-  // margin-top: 8rem;
+header .header-content{
+  margin-top: 4rem;
   padding: 2rem 1rem 0;
   position: relative;
-  z-index: -1;
+  z-index: 1;
   overflow: hidden;
-  // overflow-y: visible;
-  .intro-title{
     h1{
-      text-align: center;
       position: relative;
       z-index: 1;
       font-size: clamp(28px, 9vmin, 56px);
       line-height: 4rem;
-      font-weight: 800;
+      font-weight: 600;
       line-height: 12vmin;
-      // span{
-        //   @include txt-transparent();
-        // }
-        background: rgb(25,146,255);
-        background: linear-gradient(105deg, rgba(25,146,255,1) 0%, rgba(141,91,173,1) 42%, rgba(180,54,171,1) 100%);
-      background-clip: text;
-      color: transparent;
+      text-transform: uppercase;
       }
       h2{
         margin-top: 1rem;
+        position: relative;
+        z-index: 1;
+        font-size: clamp(28px, 9vmin, 56px);
+        line-height: 4rem;
         font-weight: 600;
-        font-size: clamp(20px, 2vmin, 56px);
-        color: rgba($color: $text-color, $alpha: 0.8);
-        text-align: center;
+        line-height: 12vmin;
+        text-transform: uppercase;
       }
-      transform: translateY(-300%);
-      padding: 1rem;
-  }
+      // transform: translateY(-300%);
+      // padding: 1rem;
+  // }
   .txt-intro{
     // margin-top: -100px;
     transform: translateY(100%);
     position: relative;
     z-index: -1;
 
-    padding: 2rem 0 1rem;
-    font-weight: 300;
+    padding: 1rem 0 1rem;
+    font-weight: 400;
     h4{
       letter-spacing: 0.05rem;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       padding: 0.4rem 0;
-      font-weight: 500;
+      font-weight: 600;
     }
     ul li{
+      font-size: 1.2rem;
       padding: 0.1rem 0;
       span{
-        font-weight: 500;
+        font-weight: 600;
+        font-size: 1.2rem;
       }
     }
     p{
+      font-size: 1.2rem;
       padding-bottom: 16px;
       strong{
-        font-weight: 500;
+        font-size: 1.2rem;
+        font-weight: 600;
       }
     }
   }
@@ -415,13 +433,13 @@ main .projets{
 main .projets .txt-projets{
   padding: 32px;
   text-align: center;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 1.1rem;
   a{
-    color: $primary-color;
-    transition: color 0.3s;
-    font-weight: 400;
+    color: $text-color;
+    font-weight: 700;
     &:hover{
-      color: $text-color;
+      text-decoration: underline;
     }
   }
 }
@@ -431,15 +449,17 @@ main .projets .projets-cards{
     width: 94%;
     position: relative;
     height: 200px;
-    margin: 1rem auto;
+    margin: 0.5rem auto;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
     will-change: height;
     transition: height 0.4s ease-out;
+    // border: 3px solid black ;
     .card-img-div{
       width: 100%;
       height: 200px;
       overflow: hidden;
       border-radius: 12px;
+      border: 4px solid black;
       .card-img{
         cursor: none;
         width: 100%;
@@ -458,7 +478,8 @@ main .projets .projets-cards{
       text-align: center;
       padding: 1rem 0 0;
       font-size: 1.8rem;
-      font-weight: 400;
+      font-weight: 600;
+      text-transform: uppercase;
       // border-bottom: none;
     }
     .card-langages{
@@ -466,23 +487,27 @@ main .projets .projets-cards{
       padding: 1rem 0;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      // justify-content: center;
       // border: 4px solid $primary-color;
+      gap: 0.4rem;
       span{
+        margin: 0.2rem;
         display: inline;
         font-size: 1.2rem;
-        padding: 0 0.5rem;
+        padding: 0.4rem 1rem;
         // text-align: center;
         // min-width: none;
+        border: 2px solid black;
+        border-radius: 50px;
       }
-      span:nth-child(2n){
-        color: $primary-color;
-      }
+      // span:nth-child(2n){
+      //   color: $primary-color;
+      // }
     }
     .card-description{
       padding: 0 1rem 1rem;
       line-height: 1.4rem;
-      font-weight: 300;
+      font-weight: 400;
       strong{
         font-weight: 600;
       }
@@ -491,14 +516,17 @@ main .projets .projets-cards{
       @include button-style();
     }
     .card-lien_github{
-      color: $primary-color;
+      color: $text-color;
     }
     .card-lien_site::before{
       @include button-style-before();
     }
-    .card-lien_site:hover::before{
+    .card-lien_site:hover{
+      color: $text-color;
+    &::before{
       @include button-style-hover();
     }
+  }
   }
 }
 
@@ -533,15 +561,33 @@ main .competences{
 }
 
 main .competences .competences-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 4rem auto;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // margin: 4rem auto;
+  // border: 3px solid black;
+  // border-radius: 1rem;
+  // width: 94%;
+  padding: 1rem;
+  margin: 4rem auto 0;
+  .competences-bloc{
+    margin-bottom: 4rem;
+    h3{
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 0.1rem;
+    }
+    hr{
+      width: 100%;
+      height: 2px;
+      background-color: black;
+    }
   .competences-list{
     padding: 0 1rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center;
     .competences-list-item{
       // width: 33%;*
@@ -556,22 +602,26 @@ main .competences .competences-container{
       align-items: center;
       // border: $text-color 2px solid;
       border-radius: 6px;
+      border: 2px solid transparent;
       img{
         height: 40px;
         width: 40px;
         margin-bottom: 0.2em;
       }
       &:hover{
-        background-color: rgba($color: $primary-color, $alpha: 0.4);
+        // background-color: rgba($color: $primary-color, $alpha: 0.4);
+        border: 2px solid $text-color;
       }
     }
   }
 }
+}
 
 // --------------------------------- contact --------------------------- 
 .contact{
+  padding: 0 0.2rem;
   .contact-title{
-    padding: 0 1rem;
+    padding: 0 0.8rem;
 
   }
   .contact-title, span{
@@ -579,26 +629,36 @@ main .competences .competences-container{
     text-align: right;
   }
   .contact-content{
-    background-color: $background-color-lighter;
-    border-top-right-radius: 24px;
-    border-top-left-radius: 24px;
-    margin-top: 6rem;
+    // background-color: $background-color-lighter;
+    border: 3px solid $text-color;
+    border-bottom: none;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    margin-top: 3rem;
     padding: 1rem 0;
     img{
+      // display: none;
       width: 100%;
       margin-top: -150px;
+    }
+    .pc{
+      display: none;
     }
     .contact-content-text{
       margin: 1rem auto;
       width: 75%;
       min-width: 280px;
+      font-weight: 500;
       div{
         padding: 0.4rem 1rem;
         font-size: 0.8rem;
+        // border: 2px solid $text-color;
         a{
           font-size: 0.8rem;
+          font-weight: 500;
         }
         img{
+          color: $text-color;
           width: 20px;
           height: auto;
           transform: translateY(20%);
@@ -613,16 +673,17 @@ main .competences .competences-container{
       margin-bottom: 1rem;
       padding: 1rem;
       a{
-        border: 1px solid $primary-color;
-        background: $primary-color;
+        border: 2px solid $text-color;
+        background: $text-color;
         display: block;
         padding: 0.6rem 1rem;
         border-radius: 6px;
         font-size: 0.8rem;
+        color: white;
         img{
           width: 20px;
           height: auto;
-          transform: translateY(20%);
+          transform: translateY(25%);
           margin-right: 1rem;
         }
       }
@@ -634,13 +695,17 @@ main .competences .competences-container{
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
-    background: $background-color-lighter;
+    // background: $background-color-lighter;
     padding: 2rem 0.8rem;
+    border: 3px solid $text-color;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top: none;
     input, textarea{
       width: 95%;
       background: none;
       border: none;
-      border: 1px solid $text-color;
+      border: 2px solid $text-color;
       padding: 0.3rem 0.8rem;
       margin: 0.2rem auto;
       border-radius: 6px;
@@ -648,7 +713,7 @@ main .competences .competences-container{
     }
     input::placeholder, textarea::placeholder{
       color: rgba($color: $text-color, $alpha: 0.8);
-      font-weight: 300;
+      font-weight: 400;
       letter-spacing: 0.08rem;
       font-size: 0.9rem
     }
@@ -656,14 +721,14 @@ main .competences .competences-container{
       @include button-style();
       width: 95%;
       margin: 2rem auto;
-      background-color: $primary-color;
-      border-color: $primary-color;
+      background-color: $text-color;
+      border-color: $text-color;
       transition: 0.4s;
       font-size: 1.1rem;
       cursor: none;
       &:hover{
         background: none;
-        color: $primary-color;         
+        color: $text-color;         
       }
     }
   }
@@ -673,8 +738,10 @@ main .competences .competences-container{
 footer{
   text-align: center;
   padding: 1rem 0;
-  background: $background-color-lighter;
+  background: $text-color;
+  margin-top: 2rem;
   p, a{
+    color: white;
     font-size: 0.8rem;
     font-weight: 200;
   }
@@ -725,40 +792,23 @@ footer{
 
   header .header-content{
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    // justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding-top: 10rem;
+    padding-top: 5rem;
+    gap: 2rem;
     // background-color: rebeccapurple;
     img{
-      width: 30%;
-      max-width: 250px;
+      // width: 100%;
+      max-width: 400px;
       margin: 0;
-      margin-right: 1rem;
+      // margin-right: 1rem;
     }
-    .intro{
-      gap: 5rem; 
-      // min-height: 40vh;
-      padding: 0 1rem;
-      width: 60%;
-      margin: 0;
-      .intro-title{
-          // line-height: 8vmin;
-          // height: 200px;
-          padding-left: 0;
-          h1, h2{
-          text-align: left;
-          }
-          h2{
-            margin-top: 0;
-          }
-          
-      }
       .txt-intro{
-        width: 50%;
+        // width: 50%;
         margin-top: -0.6rem;
-      }
     }
   }
 
@@ -881,12 +931,11 @@ main .competences .competences-container .competences-list{
     padding-bottom: 2rem;
   }
   .contact-content{
-    background: none;
-    border-radius: 24px;
+    border: 3px solid $text-color;
+    border-radius: 1rem;
     margin-top: 0;
     width: 45%;
     height: auto;
-    min-height: 400px;
     img{
       width: 100%;
     }
@@ -900,15 +949,12 @@ main .competences .competences-container .competences-list{
     }
   }
   .contact-form{
+    border: 3px solid $text-color;
+    border-radius: 1rem;
     width: 45%;
     height: auto;
     background: none;
   }
-}
-
-// ------------------------------- footer ----------------------- 
-footer{
-  background: none;
 }
 
 }
