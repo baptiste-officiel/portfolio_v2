@@ -7,7 +7,7 @@ const scene = new THREE.Scene()
 // scene.background = new THREE.Color(0x000)
 
 const loader = new GLTFLoader();
-loader.load('/assets/img/pc_3d.glb', function(glb){
+loader.load('/assets/pc_3d.glb', function(glb){
     console.log(glb);
     const root = glb.scene;
     // root.scale.set(0.03, 0.03, 0.03)
