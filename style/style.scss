@@ -58,6 +58,7 @@ $background-color-lighter: #18163a;
 $primary-color: #0bd168;
 // $text-color: #f8f8f8;
 $text-color: #0b0b0b;
+$text-color-hover: #2e2e2e;
 // $primary-color: #E9724C;
 
 // -------------------------------------------- reset ----------------------------------------------- 
@@ -335,7 +336,7 @@ header{
   }
 }
 
-header .header-content img{
+header .header-content img.face-pic{
   position: relative;
   display: block;
   z-index: 0;
@@ -394,20 +395,40 @@ header .header-content{
       padding: 0.4rem 0;
       font-weight: 600;
     }
-    ul li{
-      font-size: 1.2rem;
-      padding: 0.1rem 0;
-      span{
-        font-weight: 600;
-        font-size: 1.2rem;
-      }
-    }
     p{
-      font-size: 1.2rem;
-      padding-bottom: 16px;
-      strong{
-        font-size: 1.2rem;
-        font-weight: 600;
+      font-size: 1.1rem;
+    }
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 2rem;
+      li{
+        // background: $text-color;
+        display: flex;
+        a{
+          // border: 2px solid $text-color;
+          background: $text-color;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0.6rem 1rem;
+          border-radius: 50px;
+          font-size: 0.8rem;
+          color: white;
+          img{
+            width: 20px;
+            height: auto;
+            // transform: translateY(25%);
+            // background-color: red;
+            margin-right: 1rem;
+            display: block;
+            color: white;
+          }
+          &:hover{
+            background: $text-color-hover;
+          }
+        }
       }
     }
   }
@@ -800,13 +821,21 @@ footer{
     padding-top: 5rem;
     gap: 2rem;
     // background-color: rebeccapurple;
+    h1{
+      transform: translateY(50%);
+    }
     img{
       // width: 100%;
-      max-width: 400px;
+      max-width: 30%;
       margin: 0;
       // margin-right: 1rem;
     }
-      .txt-intro{
+    .subtitle{
+      transform: translateY(-50%);
+      // margin-top: -50px;
+    }
+    .txt-intro{
+        // transform: translateY(-50%);
         // width: 50%;
         margin-top: -0.6rem;
     }

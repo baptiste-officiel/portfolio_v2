@@ -22,21 +22,5 @@
         "description" : "Website <strong>from Scratch</strong> for a plane rent enterprise. My first customer project. The website has been made with <strong>React</strong>, <strong>react-router</strong>, <strong>CSS modules</strong>. I also send the form by mail with <strong>Emailjs</strong>.",
         "site" : "https://www.lesailesduplaisir.fr/",
         "github" : "https://github.com/baptiste-officiel/lesailesduplaisir_pro"
-    },
-    {
-        "titre": "Portfolio",
-        "image" : "./portfolio.png",
-        "langages" : ["HTML", "SCSS/SASS", "JavaScript", "Vite.js", "JSON", "Emailjs", "Vercel"],
-        "description" : "My own portfolio, made by me, from scratch. I initialized the project with <strong>Vite.js</strong>, then I developped the Front-End in <strong>HTML</strong>, <strong>SCSS</strong>. I used <strong>JavaScript</strong> and <strong>JSON</strong> to display my projects.Finally I made the choice of <strong>Emailjs</strong> so I can receive the form directly in my Mail Box.",
-        "site" : "#",
-        "github" : "https://github.com/baptiste-officiel/LADP"
-    },
-    {
-        "titre": "Ultra Shape",
-        "image" : "./ultrashape.png",
-        "langages" : ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-        "description" : "Website <strong>from Scratch</strong>. Here is my graduation project. The point here, was to make a responsive, dynamic website using the 5 languages learned at school with a <strong>Front-End</strong> and <strong>Back-End</strong> part. We also had to create an Admin who could access the database.",
-        "site" : "http://ultra-shape.alwaysdata.net/",
-        "github" : "https://github.com/baptiste-officiel/UltraShape"
     }
 ]
