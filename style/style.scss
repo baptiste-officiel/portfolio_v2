@@ -761,14 +761,10 @@ footer{
   padding: 1rem 0;
   background: $text-color;
   margin-top: 2rem;
-  p, a{
+  p{
     color: white;
     font-size: 0.8rem;
     font-weight: 200;
-  }
-  p:last-child, a{
-    font-size: 0.5rem;
-    padding-top: 0.4rem;
   }
 }
 
