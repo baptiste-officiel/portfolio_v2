@@ -6,10 +6,10 @@
 }
 
 @mixin h2-size{
-  font-family: 'Montserrat';
+  // font-family: 'Montserrat';
   font-size: clamp(26px, 8vmin, 48px);
   font-weight: 600;
-  letter-spacing: 0.1rem;
+  // letter-spacing: 0.1rem;
   text-transform: uppercase;
 }
 
@@ -508,7 +508,7 @@ main .projets .projets-cards{
       padding: 1rem 0;
       display: flex;
       flex-wrap: wrap;
-      // justify-content: center;
+      justify-content: center;
       // border: 4px solid $primary-color;
       gap: 0.4rem;
       span{
@@ -518,7 +518,7 @@ main .projets .projets-cards{
         padding: 0.4rem 1rem;
         // text-align: center;
         // min-width: none;
-        border: 2px solid black;
+        border: 3px solid $text-color;
         border-radius: 50px;
       }
       // span:nth-child(2n){
@@ -566,8 +566,9 @@ main .competences{
     // gap: 5vmin;
     h2{
       @include h2-size();
-      font-size: 1.6rem;
-      min-width: 150px;
+      // font-size: 2rem;
+      // min-width: 150px;
+      padding: 0 1rem;
       will-change: transform;
       animation: slide 1.6s infinite linear;
     }
@@ -576,6 +577,9 @@ main .competences{
 }
 
 @keyframes slide {
+  0%{
+    transform: translateX(0%);
+  }
   100%{
     transform: translateX(-100%);
   }
@@ -839,7 +843,7 @@ footer{
 
   // --------------------------- projets --------------------- 
   main .projets{
-    margin: 4rem auto;
+    margin: 8rem auto 4rem;
   }
 
   main .projets .txt-projets{
