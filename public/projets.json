@@ -1,17 +1,17 @@
 [
     {
-        "titre": "Netflix Clone",
-        "image" : "./netflix-clone.png",
-        "langages" : ["Next.js", "Next Router", "Next Auth", "Tailwind", "Prisma", "MongoDB", "Vercel", "Splide"],
-        "description" : "<strong>Next.js</strong> project, it's a Netflix Clone project where you can access reviews of movies. You have to create an account and log in to access the data. I discovered how to use <strong>Next Auth</strong>, <strong>Prisma</strong> and <strong>MongoDB</strong>. All the data come from an API named 'The Movie Database'. I used <strong>Next Router</strong> to navigate between the different pages and <strong>tailwind</strong> for styling, obviously.",
-        "site" : "https://netflix-clone-baptiste-lejeune.vercel.app/",
-        "github" : "https://github.com/baptiste-officiel/netflix-clone"
+        "titre": "Mano Makeup",
+        "image" : "./mano-makeup.png",
+        "langages" : ["Next.js", "Typescript", "Next Router", "Next Auth", "Tailwind", "Prisma", "MongoDB", "Vercel"],
+        "description" : "Projet réalisé à l'aide de <strong>Next.js</strong>. Création d'un site web pour une maquilleuse pro. Ajout d'une partie admin qui sert à ajouter, modifier ou supprimer les prestations proposées par l'artiste.",
+        "site" : "https://manonverdier-makeupartist.vercel.app/",
+        "github" : "https://github.com/baptiste-officiel/mano-makeup"
     },
     {
         "titre": "McRecette",
         "image" : "./mcrecette.png",
         "langages" : ["React", "React Router", "Fetch", "styled-components", "Vercel", "framer-motion", "Splide"],
-        "description" : "<strong>React</strong> project, it's a recipes website. All the data come from an API named 'Spoonacular'. I used <strong>React Router</strong> to navigate between the different pages and <strong>styled-components</strong> for styling, obviously.",
+        "description" : "Projet <strong>React</strong>, il s'agit d'un site de recettes. Les données proviennent d'une API du nom de 'Spoonacular'. J'ai utilisé <strong>React Router</strong> pour naviguer entre les différentes pages et <strong>styled-components</strong> pour le style, évidemment.",
         "site" : "https://mc-recette.vercel.app/",
         "github" : "https://github.com/baptiste-officiel/McRecette"
     },
@@ -19,7 +19,7 @@
         "titre": "LADP",
         "image" : "./ladp.png",
         "langages" : ["React", "Vitejs", "React Router", "CSS modules", "Emailjs", "Vercel"],
-        "description" : "Website <strong>from Scratch</strong> for a plane rent enterprise. My first customer project. The website has been made with <strong>React</strong>, <strong>react-router</strong>, <strong>CSS modules</strong>. I also send the form by mail with <strong>Emailjs</strong>.",
+        "description" : "Site web <strong>from Scratch</strong> pour une société de location d'avion. Mon premier projet pro. Le site a été réalisé à l'aide de <strong>React</strong>, <strong>react-router</strong>, <strong>CSS modules</strong>. L'envoi d'email se fait via <strong>Emailjs</strong>.",
         "site" : "https://www.lesailesduplaisir.fr/",
         "github" : "https://github.com/baptiste-officiel/lesailesduplaisir_pro"
     }

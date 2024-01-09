@@ -1,5 +1,13 @@
 [
     {
+        "titre": "Netflix Clone",
+        "image" : "./netflix-clone.png",
+        "langages" : ["Next.js", "Next Router", "Next Auth", "Tailwind", "Prisma", "MongoDB", "Vercel", "Splide"],
+        "description" : "<strong>Next.js</strong> project, it's a Netflix Clone project where you can access reviews of movies. You have to create an account and log in to access the data. I discovered how to use <strong>Next Auth</strong>, <strong>Prisma</strong> and <strong>MongoDB</strong>. All the data come from an API named 'The Movie Database'. I used <strong>Next Router</strong> to navigate between the different pages and <strong>tailwind</strong> for styling, obviously.",
+        "site" : "https://netflix-clone-baptiste-lejeune.vercel.app/",
+        "github" : "https://github.com/baptiste-officiel/netflix-clone"
+    },
+    {
         "titre": "McRecette",
         "image" : "./mcrecette.png",
         "langages" : ["React", "React Router", "Fetch", "styled-components", "framer-motion", "Splide"],
